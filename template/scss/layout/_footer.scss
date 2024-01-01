@@ -1,0 +1,42 @@
+.contact {
+  padding: 80px 10%;
+  background-color: $text-color;
+
+  .main-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    .contact-content {
+      li {
+        margin-bottom: 15px;
+
+        a {
+          display: block;
+          color: $white;
+          font-size: $p-font;
+          font-weight: 600;
+          transition: all 0.4s ease;
+
+          &:hover {
+            transform: translateX(-10px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.last {
+  text-align: center;
+  padding: 17px;
+  background: #757575;
+
+  p {
+    color: $text-color;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+}
