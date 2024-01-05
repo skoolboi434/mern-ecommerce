@@ -15,7 +15,7 @@ const ProductScreen = () => {
 
   const navigate = useNavigate();
 
-  const [qty, setQty] = useState();
+  const [qty, setQty] = useState(1);
 
   const { data: product, isLoading, error } = useGetProductDetailsQuery(productId);
 
